@@ -1,0 +1,1 @@
+I will send all the images and icons we would be needing for this template, for now work without an image, or use a dummy image.

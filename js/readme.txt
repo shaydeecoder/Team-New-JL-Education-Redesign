@@ -1,0 +1,1 @@
+Should you write a JS code, save it with your page's name
