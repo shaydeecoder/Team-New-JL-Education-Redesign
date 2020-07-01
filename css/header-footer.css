@@ -1,0 +1,218 @@
+:root {
+  --base-color: #1652f0;
+  --primary-color: #05b169;
+  --secondary-color: #ffcf40;
+  --font-stack: "Poppins", sans-serif;
+  --font-body-size: 21px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-stack);
+  color: #000;
+  font-size: 24px;
+  overflow-x: hidden;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-stack);
+  font-weight: bold;
+  color: var(--base-color);
+}
+
+h1 { font-size: 48px; }
+h2 { font-size: 36px; }
+h3 { font-size: 32px; }
+
+
+/* ==========================================================================================
+                                        Utilities
+========================================================================================== */
+
+.bg-base {
+  background-color: var(--base-color) !important;
+}
+
+.bg-primary {
+  background-color: var(--primary-color) !important;
+}
+
+.bg-secondary {
+  background-color: var(--secondary-color) !important;
+}
+
+.btn { color:
+   #fff !important;
+   border: none !important;
+}
+.btn-base { background-color: var(--base-color) !important; }
+.btn-primary { background-color: var(--primary-color) !important; }
+.btn-secondary { background-color: var(--secondary-color) !important; }
+
+
+/* ==========================================================================================
+                                          Header
+========================================================================================== */
+
+header {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background: var(--secondary-color);
+  font-weight: 600;
+  font-size: 18px;
+}
+
+header nav .current {
+  border-bottom: 2px solid var(--primary-color);
+}
+
+header nav .btn {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+header .navbar-dark .navbar-nav .nav-link {
+  color: #333 !important;
+}
+
+header .nav-btn.btn-outline-light:hover {
+  color: var(--base-color) !important;
+}
+
+header nav .nav-item {
+  margin-right: 1.3rem;
+}
+
+header nav .btn.bg-primary {
+  background-color: var(--primary-color) !important;
+}
+
+header nav a:hover {
+  color: var(--secondary-color) !important;
+  transition: 1s;
+}
+
+header .btn:hover {
+  background: var(--secondary-color) !important;
+  color: #fff !important;
+}
+
+header .btn-outline {
+  border: 2px solid var(--primary-color) !important;
+  color: var(--primary-color) !important;
+}
+
+header .btn-outline:hover {
+  background: none !important;
+  border-color: var(--secondary-color) !important;
+  color: var(--secondary-color) !important;
+}
+
+
+/* ==========================================================================================
+                                          Footer
+========================================================================================== */
+
+footer.container-fluid {
+  color: #fff;
+  padding: 5rem 4rem;
+}
+
+footer .underline {
+  border-bottom: 1px solid #fff;
+}
+
+footer p {
+  font-size: 18px;
+}
+
+footer h5 {
+  font-weight: 600;
+}
+
+footer .row .col-md-3 a {
+  margin-right: 2rem;
+}
+
+footer ul {
+  margin-right: 0;
+  list-style: none;
+  font-size: 18px;
+}
+
+footer ul li {
+  margin-bottom: .75rem;
+}
+
+footer h5, footer a {
+  color: #fff;
+}
+
+footer p, footer a {
+  opacity: 0.8;
+}
+
+footer .contact-sm {
+  display: none;
+}
+
+
+
+/* ==========================================================================================
+                                      Responsiveness
+========================================================================================== */
+
+@media (max-width: 768px) {
+  header nav .btn {
+    margin-top: 1rem !important;
+  }
+  .navbar .navbar-brand {
+    font-size: 30px;
+  }
+  img.img-fluid {
+    max-width: 70%;
+  }
+
+  footer ul, footer p {
+    font-size: 14px;
+  }
+
+  footer.container-fluid {
+    padding: 5rem 1.5rem;
+  }
+
+  footer div.col-md-3.xyz.pl-5 {
+    padding-left: 15px !important;
+  }
+
+  footer .ml-5 {
+    margin-left: 2rem !important;
+  }
+
+  footer .navigation {
+    display: none;
+  }
+}
+
+@media (max-width: 411px) {
+  footer .navigation {
+    display: block;
+  }
+
+  footer .contact-sm {
+    display: flex;
+  }
+
+  footer .contact-lg {
+    display: none;
+  }
+}

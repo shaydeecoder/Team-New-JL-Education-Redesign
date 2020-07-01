@@ -1,0 +1,272 @@
+:root {
+  --base-color: #1652f0;
+  --primary-color: #05b169;
+  --secondary-color: #ffcf40;
+  --font-stack: "Poppins", sans-serif;
+  --font-body-size: 21px;
+  --font-size-sm: 18px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-stack);
+  color: #000;
+  font-size: 24px;
+  overflow-x: hidden;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-stack);
+  font-weight: bold;
+  color: var(--base-color);
+}
+
+h1 { font-size: 48px; }
+h2 { font-size: 36px; }
+h3 { font-size: 32px; }
+
+/* Utility */
+
+.bg-base {
+  background-color: var(--base-color) !important;
+}
+
+.bg-primary {
+  background-color: var(--primary-color) !important;
+}
+
+.bg-secondary {
+  background-color: var(--secondary-color) !important;
+}
+
+.btn { color: #fff; }
+.btn-base { background-color: var(--base-color) !important; }
+.btn-primary { background-color: var(--primary-color) !important; }
+.btn-secondary { background-color: var(--secondary-color) !important; }
+
+.container {
+  padding-top: 6rem;
+}
+
+.section-title {
+  font-weight: bold !important;
+  color: #000;
+}
+
+/* Section - Hero */
+
+.hero {
+  background: url('../img/jumbotron-img.png') no-repeat top center/cover;
+  color: #fff;
+  padding: 0;
+  background-color: rgba(black, black, black, 0.4);
+}
+
+.hero .hero-bg-overlay {
+  height: 86vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.hero .container {
+  padding: 1rem 15%;
+}
+
+.hero h1 {
+  color: #fff;
+  line-height: 75px;
+}
+
+.hero p {
+  line-height: 2;
+}
+
+/* Section - Category */
+
+.category .row .col-md {
+  margin: 1rem;
+  padding: 2rem;
+  border: 1.7px solid var(--base-color);
+}
+
+.category .row .col:first-child {
+  margin-left: 0;
+}
+
+.category .row .col:last-child {
+  margin-right: 0;
+}
+
+.category h4 {
+  font-weight: 600;
+}
+
+.category .row .col-md p,
+.category .row .col-md a {
+  font-size: var(--font-body-size);
+}
+
+.category .row .col-md a {
+  color: var(--base-color);
+}
+
+/* Section - Top Rated */
+
+.top-rated .row .col-md {
+  margin: 1rem;
+  padding: 0;
+  border: 1px solid #eee;
+  transition: 1s;
+}
+
+.top-rated .row .col:first-child {
+  margin-left: 0;
+}
+
+.top-rated .row .col:last-child {
+  margin-right: 0;
+}
+
+.top-rated .row .col-md a {
+  color: #000;
+}
+
+.top-rated .row .col-md:hover {
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+
+.top-rated .row .col-md .img {
+  width: 100%;
+  height: 230px;
+  background: var(--primary-color);
+}
+
+.top-rated .row .col-md .img.card-1 {background: url('../img/card1.png') no-repeat center center/cover;}
+.top-rated .row .col-md .img.card-2 {background: url('../img/card2.png') no-repeat center center/cover;}
+.top-rated .row .col-md .img.card-3 {background: url('../img/card3.png') no-repeat center center/cover;}
+
+.top-rated .row .col-md .details {
+  min-height: 200px;
+}
+
+.top-rated .row .col-md .details h4 {
+  color: #000;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.top-rated .row .col-md .details h4 span {
+  font-size: x-small;
+  color: var(--base-color);
+}
+
+.top-rated .row .col-md .details h6 {
+  font-size: small;
+}
+
+.top-rated .row .col-md .details p,
+.why p, .why ul {
+  font-size: 16px;
+}
+
+/* Section - Why */
+
+.why ul {
+  list-style: none;
+}
+
+.why ul li {
+  display: flex;
+  align-items: center;
+}
+
+.why ul li i {
+  font-size: 8px;
+  color: var(--primary-color);
+  margin-right: .5rem;
+}
+
+.why .card-1 { padding-top: 4rem; }
+.why .card-2 { padding-bottom: 1rem; }
+
+.why .card-1 div, 
+.why .card-2 div { 
+  height: 500px;
+}
+
+.why .card-1 div { background: url('../img/about-img1.png') no-repeat center center/cover; }
+.why .card-2 div { background: url('../img/about-img2.png') no-repeat center center/cover; }
+
+/* Section - Partners */
+
+.partners .container {
+  margin-bottom: 4rem;
+}
+
+.partners ul {
+  list-style: none;
+}
+
+.partners ul li {
+  margin-right: 4rem;
+}
+
+
+/* ==========================================================================================
+                                      Responsiveness
+========================================================================================== */
+
+@media (max-width: 768px) {
+  body {
+    font-size: var(--font-body-size);
+  }
+
+  .hero h1 {
+    font-size: 30px;
+    line-height: 1.5;
+  }
+
+  .category .row .col-md p,
+  .category .row .col-md a {
+  font-size: var(--font-size-sm);
+  }
+
+  .category h4 {
+    font-size: 20px;
+  }
+
+  .category img {
+    width: 60px !important;
+  }
+
+  .category .category-sm, 
+  .why .card-1 {
+    display: none;
+  }
+
+  .top-rated .row .col-md .img {
+    height: 200px;
+  }
+
+  .why, .why ul li {
+    text-align: center !important;
+    padding-left: 2rem;
+  }
+
+  .why .card-2 {
+    margin-top: 2rem;
+  }
+
+  .why .card-2 div {
+    height: 300px;
+  }
+}
