@@ -220,6 +220,10 @@ h3 { font-size: 32px; }
   margin-right: 4rem;
 }
 
+.partners .partners-sm {
+  display: none;
+}
+
 
 /* ==========================================================================================
                                       Responsiveness
@@ -268,5 +272,21 @@ h3 { font-size: 32px; }
 
   .why .card-2 div {
     height: 300px;
+  }
+
+  .partners h3.mb-4.text-center.mb-5 {
+    margin-bottom: 1rem !important;
+  }
+
+  .partners .partners-sm {
+    display: flex;
+  }
+
+  .partners .partners-lg {
+    display: none;
+  }
+
+  .partners .partners-sm img.img-fluid {
+    max-width: 100%;
   }
 }
