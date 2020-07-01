@@ -165,11 +165,23 @@ footer .contact-sm {
   display: none;
 }
 
+footer a:hover {
+  color: var(--secondary-color);
+  opacity: 1;
+  transition: 1s;
+}
+
 
 
 /* ==========================================================================================
                                       Responsiveness
 ========================================================================================== */
+
+@media (max-width: 991px) {
+  footer .navigation {
+    display: none;
+  }
+}
 
 @media (max-width: 768px) {
   header nav .btn {
@@ -200,6 +212,10 @@ footer .contact-sm {
 
   footer .navigation {
     display: none;
+  }
+
+  footer .row .col-md-3 a {
+    margin-right: 1rem;
   }
 }
 
