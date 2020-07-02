@@ -39,37 +39,6 @@ h6 {
   background-color: var(--secondary-color) !important;
 }
 
-/* Header 
-   ============================= */
-header {
-  padding-left: 2rem;
-  padding-right: 2rem;
-  background: var(--secondary-color);
-  border-bottom: 1px solid #333;
-}
-
-header nav .current {
-  border-bottom: 2px solid var(--primary-color);
-}
-
-header nav .nav-item {
-  margin-right: 1rem;
-}
-
-header nav .btn.bg-primary {
-  padding-top: 0;
-  padding-bottom: 0;
-  background: var(--primary-color) !important;
-}
-
-header nav a:hover {
-  opacity: 0.5;
-}
-
-header div .btn:hover {
-  opacity: 0.8 !important;
-}
-
 /* Hero Banner
    ============================= */
 .banner-h2 {
@@ -103,35 +72,25 @@ img {
   max-width: 100%;
 }
 .banner-overlay {
-  background: #000;
-  opacity: 0.5 !important;
+  background: rgba(0, 0, 0, 0.6);
   color: white;
   height: 100%;
   width: 100%;
   display: flex;
 }
 
-header div .pageHeader {
+#banner div .pageHeader {
   background-image: url("img/banner.jpg");
   height: 250px;
   background-size: cover;
 }
-header div .overlay {
-  background: #1652f0;
-  opacity: 0.5 !important;
+
+#banner div .overlay {
+  background: #1654f08e;
   color: white;
   height: 100%;
   width: 100%;
   display: flex;
-}
-/* Navigation 
-   ============================= */
-.nav-link {
-  color: rgb(138, 133, 133);
-}
-.nav-item a.active {
-  color: #1652f0 !important;
-  background-color: white !important;
 }
 
 /* Section - About us intro
@@ -147,7 +106,7 @@ h2.heading-text {
   line-height: 54px;
 }
 p.normal-text {
-  line-height: 32px;
+  line-height: 45px;
   font-size: 1.1em;
   font-weight: light;
   text-align: center;
@@ -178,7 +137,7 @@ h2.heading-text2 {
   color: white;
 }
 p.normal-text2 {
-  line-height: 32px;
+  line-height: 45px;
   font-size: 1.1em;
   font-weight: light;
   text-align: center;
@@ -258,7 +217,7 @@ h2.about-text {
   padding-bottom: 0px;
   /* margin-left: 100px; */
   margin-top: 0px;
-  background-image: url("/img/smiling-man.jpg");
+  background-image: url("../img/smiling-man.jpg");
   background-size: cover;
   background-position: center right;
   background-clip: padding-box;
@@ -271,7 +230,7 @@ h2.about-text {
   padding-bottom: 0px;
   /* margin-left: 110px; */
   margin-bottom: 80px;
-  background-image: url("/img/young.jpeg");
+  background-image: url("../img/young.jpeg");
   background-size: cover;
   background-position: top center;
   background-clip: padding-box;
@@ -308,82 +267,14 @@ h2.about-text {
   color: #2f2e2e;
 }
 
-/* Footer 
-   ============================= */
-footer p {
-  color: white !important;
-  display: block;
-  line-height: 200.5%;
-  font-weight: 300;
-  opacity: 0.7;
-}
-footer a {
-  color: white !important;
-  display: block;
-  line-height: 270%;
-  font-weight: 300;
-  opacity: 0.7;
-}
-footer a:hover {
-  opacity: 0.9 !important;
-  color: white !important;
-  text-decoration: none;
-}
-footer p.head {
-  opacity: 0.9;
-  font-weight: 500;
-  font-size: 0.8rem;
-}
-
-footer {
-  background-color: var(--base-color) !important;
-  padding: 4rem;
-}
-
-footer hr {
-  background-color: white;
-  margin-top: 30px;
-}
-footer a {
-  font-size: 0.7em;
-}
-footer p {
-  font-size: 0.7em;
-}
-
-footer input {
-  border: 0;
-  padding: 30px;
-}
-
-footer .floor {
-  margin-top: 20px;
-  font-size: 1.4em;
-}
-
-footer .logo img {
-  width: 30px;
-  height: 30px;
-  transition: ease-in-out 0.4s all;
-  cursor: pointer;
-}
-footer .logo img:hover {
-  width: 35px;
-  height: 35px;
-}
-
 /* Responsiveness 
    ============================= */
+
 @media (max-width: 768px) {
-  /* Header
-   ============================= */
-  header nav .btn {
-    margin-top: 1rem;
-  }
   /* Section - About Us Intro
    ============================= */
   h2.heading-text {
-    font-size: 20px;
+    margin-bottom: 2rem;
     line-height: 34px;
   }
 
@@ -398,7 +289,7 @@ footer .logo img:hover {
   /* Section - About us Mission
    ============================= */
   h2.heading-text2 {
-    font-size: 30px;
+    /* font-size: 30px; */
     line-height: 34px;
     color: white;
   }
