@@ -41,74 +41,17 @@ h6 {
     background-color: var(--secondary-color) !important;
 }
 
-/* Header */
-header {
-    padding-left: 2rem;
-    padding-right: 2rem;
-    background: var(--secondary-color);
-    font-weight: 500;
-}
-
-header nav .current {
-    border-bottom: 2px solid var(--primary-color);
-    border-bottom: 5px solid var(--primary-color);
-    padding: 0;
-    margin-top: 8px;
-}
-
-header .navbar-dark .navbar-nav .nav-link {
-    color: #333 !important;
-}
-
-header .nav-btn.btn-outline-light:hover {
-    color: var(--base-color) !important;
-}
-
-header nav .nav-item {
-    margin-right: 1rem;
-}
-
-/* header nav .btn .bg-primary {
-    padding-top: 0;
-    padding-bottom: 0;
-    background: var(--primary-color) !important;
-} */
-
-header .btn:hover {
-    background: transparent !important;
-    border: 1px solid #05B169 !important;
-    color: #05B169 !important;
-    transition: none !important;
-}
-
-header .btn {
-    background: transparent !important;
-    border: 1px solid #05B169 !important;
-    color: #05B169 !important;
-}
-
-header .btn-success {
-    background: #05B169 !important;
-    color: #fff !important;
-}
-
-header nav a:hover {
-    color: black !important;
-    transition: none !important;
-}
-
-header nav .btn a {
-    color: #fff !important;
-}
-
 /* add jumbotron image here */
+
 .jumbotron {
     height: 420px;
     background-color: #e5e5e5;
-    background-image: url("https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background: url("https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80") no-repeat center center/cover;
+}
+
+.jumbotron .overlay {
+  height: 420px;
+  background: rgba(0, 0, 0, 0.6);
 }
 
 #banner #question #mainQuest {
@@ -133,7 +76,6 @@ header nav .btn a {
 }
 
 #banner #question #mainQuest input[id="search"]:focus {
-
     box-shadow: 1px 1px 3px #05B169;
 }
 
@@ -158,8 +100,8 @@ h6 {
     display: grid;
     grid-template-rows: repeat(2, minmax(0, auto));
     grid-template-columns: repeat(12, 1fr);
-    grid-gap: 3%;
-    padding: 4%;
+    grid-gap: 1.5rem;
+    padding: 0 0 4%;
 }
 
 #support #mainfaq #faqs {
@@ -293,13 +235,6 @@ textarea {
 
 /* Responsiveness */
 @media (max-width: 800px) {
-    header nav .btn {
-        margin-top: 1rem;
-    }
-
-    .navbar .navbar-brand {
-        font-size: 30px;
-    }
 
     #support #mainfaq #faqs {
         grid-row: 1/2;
@@ -329,10 +264,6 @@ textarea {
         width: 100%;
     }
 
-    footer {
-        margin-top: 20%;
-    }
-
     #banner #question #mainQuest {
         margin-top: 0;
         grid-column: 2/12;
@@ -348,8 +279,8 @@ textarea {
         background-color: #e5e5e5;
     }
 
-    footer {
-        margin-top: 40%;
+    .jumbotron .overlay {
+      height: 203px;
     }
 
     #banner #question #mainQuest {

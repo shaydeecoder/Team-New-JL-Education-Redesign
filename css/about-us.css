@@ -1,0 +1,472 @@
+:root {
+  --base-color: #1652f0;
+  --primary-color: #05b169;
+  --secondary-color: #ffcf40;
+  --font-stack: "Poppins", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-stack);
+  color: #000;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-stack);
+  font-weight: bold;
+  color: var(--base-color);
+}
+
+/* Utilities
+   ============================= */
+
+.bg-primary {
+  background-color: var(--primary-color) !important;
+}
+
+.bg-secondary {
+  background-color: var(--secondary-color) !important;
+}
+
+/* Header 
+   ============================= */
+header {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background: var(--secondary-color);
+  border-bottom: 1px solid #333;
+}
+
+header nav .current {
+  border-bottom: 2px solid var(--primary-color);
+}
+
+header nav .nav-item {
+  margin-right: 1rem;
+}
+
+header nav .btn.bg-primary {
+  padding-top: 0;
+  padding-bottom: 0;
+  background: var(--primary-color) !important;
+}
+
+header nav a:hover {
+  opacity: 0.5;
+}
+
+header div .btn:hover {
+  opacity: 0.8 !important;
+}
+
+/* Hero Banner
+   ============================= */
+.banner-h2 {
+  margin: auto;
+  color: #fff;
+  margin-top: 150px;
+  font-family: Poppins;
+  font-size: 44.18px;
+  line-height: 66px;
+  line-height: 100%;
+  vertical-align: top;
+  font-style: bold;
+}
+.pageHeader.banner {
+  background-image: url("../img/about-us-1.jpeg");
+  background-size: cover;
+  background-position: center;
+  height: 350px;
+}
+p.normal-text {
+  line-height: 32px;
+  font-size: 21px;
+  font-weight: light;
+  text-align: center;
+}
+/* .heading-text {
+  margin-top: 30px;
+} */
+
+img {
+  max-width: 100%;
+}
+.banner-overlay {
+  background: #000;
+  opacity: 0.5 !important;
+  color: white;
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+header div .pageHeader {
+  background-image: url("img/banner.jpg");
+  height: 250px;
+  background-size: cover;
+}
+header div .overlay {
+  background: #1652f0;
+  opacity: 0.5 !important;
+  color: white;
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+/* Navigation 
+   ============================= */
+.nav-link {
+  color: rgb(138, 133, 133);
+}
+.nav-item a.active {
+  color: #1652f0 !important;
+  background-color: white !important;
+}
+
+/* Section - About us intro
+   ============================= */
+.sectioning {
+  margin-top: 40px;
+}
+section {
+  min-height: 300px;
+}
+h2.heading-text {
+  font-size: 30px;
+  line-height: 54px;
+}
+p.normal-text {
+  line-height: 32px;
+  font-size: 1.1em;
+  font-weight: light;
+  text-align: center;
+  max-width: 85ch;
+  margin: auto;
+}
+
+div .instructor {
+  margin-top: 15px;
+  color: #1652f0;
+  font-weight: bold;
+}
+span .fa-arrow-right {
+  margin-left: 10px;
+  color: #1652f0;
+}
+
+/* Section - Mission
+   ============================= */
+.second-section {
+  width: 100%;
+  background-color: #1652f0;
+  color: white;
+}
+h2.heading-text2 {
+  font-size: 30px;
+  line-height: 54px;
+  color: white;
+}
+p.normal-text2 {
+  line-height: 32px;
+  font-size: 1.1em;
+  font-weight: light;
+  text-align: center;
+  color: white;
+  max-width: 85ch;
+  text-overflow: ellipsis;
+  margin: auto;
+}
+
+/* Section - Teachers
+   ============================= */
+.img-teachers {
+  width: 635px;
+}
+
+/* Section - Our student
+   ============================= */
+button.get-started {
+  color: white;
+  padding: 10px;
+  background: var(--primary-color) !important;
+}
+button.get-started:hover {
+  color: white;
+  opacity: 0.7;
+  background: var(--primary-color) !important;
+}
+
+/* Section - What people say about us 
+   ============================= */
+
+h2.about-text {
+  color: #1652f0;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.about-class {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.pep-container {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.pep-text {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 48px;
+  text-align: center;
+  color: #333333;
+}
+
+.aboutimg {
+  max-width: 100%;
+  height: 160px;
+  border-radius: 100px;
+  justify-content: center;
+  margin: auto;
+}
+.about-img {
+  width: 200px;
+  height: 200px;
+  margin-left: 105px;
+  margin-bottom: -110px;
+}
+
+.smilingman {
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  border-radius: 100px;
+  padding-bottom: 0px;
+  /* margin-left: 100px; */
+  margin-top: 0px;
+  background-image: url("/img/smiling-man.jpg");
+  background-size: cover;
+  background-position: center right;
+  background-clip: padding-box;
+}
+.young {
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  border-radius: 100px;
+  padding-bottom: 0px;
+  /* margin-left: 110px; */
+  margin-bottom: 80px;
+  background-image: url("/img/young.jpeg");
+  background-size: cover;
+  background-position: top center;
+  background-clip: padding-box;
+}
+.about-head {
+  padding-top: 77px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 53px;
+  color: #2f2e2e;
+  text-align: center;
+}
+
+.about-content {
+  width: 340px;
+  height: 299px;
+  background: #fff;
+  margin: 20px;
+  border: 1px solid #333333;
+  text-align: center;
+  justify-content: space-evenly;
+}
+
+.about-text {
+  margin-left: 30px;
+  margin-right: 30px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 31px;
+  color: #2f2e2e;
+}
+
+/* Footer 
+   ============================= */
+footer p {
+  color: white !important;
+  display: block;
+  line-height: 200.5%;
+  font-weight: 300;
+  opacity: 0.7;
+}
+footer a {
+  color: white !important;
+  display: block;
+  line-height: 270%;
+  font-weight: 300;
+  opacity: 0.7;
+}
+footer a:hover {
+  opacity: 0.9 !important;
+  color: white !important;
+  text-decoration: none;
+}
+footer p.head {
+  opacity: 0.9;
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+
+footer {
+  background-color: var(--base-color) !important;
+  padding: 4rem;
+}
+
+footer hr {
+  background-color: white;
+  margin-top: 30px;
+}
+footer a {
+  font-size: 0.7em;
+}
+footer p {
+  font-size: 0.7em;
+}
+
+footer input {
+  border: 0;
+  padding: 30px;
+}
+
+footer .floor {
+  margin-top: 20px;
+  font-size: 1.4em;
+}
+
+footer .logo img {
+  width: 30px;
+  height: 30px;
+  transition: ease-in-out 0.4s all;
+  cursor: pointer;
+}
+footer .logo img:hover {
+  width: 35px;
+  height: 35px;
+}
+
+/* Responsiveness 
+   ============================= */
+@media (max-width: 768px) {
+  /* Header
+   ============================= */
+  header nav .btn {
+    margin-top: 1rem;
+  }
+  /* Section - About Us Intro
+   ============================= */
+  h2.heading-text {
+    font-size: 20px;
+    line-height: 34px;
+  }
+
+  p.normal-text {
+    line-height: 32px;
+    font-size: 0.8em;
+    font-weight: light;
+    text-align: center;
+    max-width: 85ch;
+    margin: 0 10px;
+  }
+  /* Section - About us Mission
+   ============================= */
+  h2.heading-text2 {
+    font-size: 30px;
+    line-height: 34px;
+    color: white;
+  }
+  p.normal-text2 {
+    line-height: 32px;
+    font-size: 0.8em;
+    font-weight: light;
+    text-align: center;
+    color: white;
+    max-width: 85ch;
+    margin: 0 10px;
+  }
+
+  /* What people say about us
+   ============================= */
+  h2.about-text {
+    color: #1652f0;
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
+  }
+  .about-class {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-img {
+    width: 50%;
+    height: 160px;
+    margin-left: 70px;
+    margin-bottom: -80px;
+  }
+
+  .aboutimg {
+    margin-left: 65px;
+  }
+  .pep-text {
+    font-size: 17.47px;
+    line-height: 26px;
+    color: #333333;
+  }
+  .about-content {
+    margin-bottom: 45px;
+    width: 265.34px;
+    height: 290.51px;
+    font-weight: bold;
+  }
+  .about-head {
+    font-size: 15.1005px;
+    line-height: 38px;
+    color: #2f2e2e;
+  }
+  .about-text {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 23px;
+    color: #2f2e2e;
+  }
+  /* Footer
+   ============================= */
+  footer p {
+    font-size: 0.7rem;
+  }
+
+  footer a {
+    font-size: 0.7rem;
+  }
+  footer .top-buffer {
+    margin-top: 40px;
+  }
+}

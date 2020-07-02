@@ -16,7 +16,7 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/header-footer.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact-us.css">
 
     <title>ZuriAcademy | Home</title>
   </head>
@@ -34,8 +34,8 @@
 
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav mr-auto w-100 justify-content-end">
-            <li class="nav-item active">
-              <a class="nav-link current" href="index.html">Home <span class="sr-only">(current)</span></a>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="course.html">Courses</a>
@@ -46,8 +46,8 @@
             <li class="nav-item">
               <a class="nav-link" href="faq.html">FAQ</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact-us.html">Contact Us</a>
+            <li class="nav-item active">
+              <a class="nav-link current" href="contact-us.html">Contact Us <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link nav-btn btn btn-outline px-4" href="Signin-1.html">Sign In</a>
@@ -59,6 +59,66 @@
         </div>
       </nav>
     </header>
+
+    <!-- Section - Contact-Us -->
+    <section class="contact container-fluid my-5">
+      <div class="container">
+        <div class="mb-5">
+          <h4>Got a Question?</h4>
+          <h3>Contact Zuri Academy</h3>
+        </div>
+        <div class="row">
+          <div class="col-md-7">
+            <form>
+              <div class="form-group">
+                <div class="Contact-reasons-wrap d-flex">
+                  <div class="contact-reasons mr-2">
+                    <button type="button" class="btn btn-outline btn-active">Feedback</button>
+                    <button type="button" class="btn btn-outline">Payments</button>
+                  </div>
+                  <div class="contact-reasons">
+                    <button type="button" class="btn btn-outline">LogIn</button>
+                    <button type="button" class="btn btn-outline">Other</button>
+                  </div>
+                  
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control form-control-lg" id="name" placeholder="Name">
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" class="form-control form-control-lg" id="email" placeholder="Email Address" aria-describedby="emailHelp">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control form-control-lg" id="message" rows="5" placeholder="Your Message Here"></textarea>
+              </div>
+              <button type="submit" class="btn btn-lg bg-primary mt-2">SEND MESSAGE</button>
+            </form>
+          </div>
+          <div class="col-md ml-5 contact-icon-lg">
+            <img src="img/contact.svg" class="img-fluid" width="300" alt="">
+            <div class="contact-info-wrap pt-5">
+              <h4 class="mb-4">Contact Information</h4>
+              <ul class="contact-info">
+                <li>
+                  <i class="fas fa-map-marker-alt"></i> No 1, Lekki Phase 1, Lagos State, Nigeria
+                </li>
+                <li>
+                  <i class="fas fa-phone-alt"></i> +1 1234 5678
+                </li>
+                <li>
+                  <i class="fas fa-envelope"></i> info@zuriacademy.com
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Footer -->
     <footer class="container-fluid bg-base">

@@ -1,0 +1,85 @@
+/* Section - Contact-Us */
+.contact {
+  font-size: 21px;
+}
+
+.contact form {
+  padding: 2rem;
+  border: 1px solid #ddd;
+  border-radius: 7px;
+}
+
+.contact-info-wrap ul {
+  list-style: none;
+}
+
+.contact h4 {
+  color: #000;
+}
+
+.contact .contact-reasons {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact .btn-outline {
+  width: 200px;
+  border: 1px solid #333 !important;
+  color: #333 !important;
+  margin-right: 1rem;
+  margin-bottom: .5rem;
+}
+
+.contact .btn-outline:hover {
+  border: 1px solid var(--primary-color) !important;
+  color: var(--primary-color) !important;
+}
+
+.contact .btn-active {
+  background: var(--primary-color) !important;
+  color: #fff !important;
+  border: none !important;
+}
+
+.contact .btn:hover {
+  opacity: 0.8;
+  transition: ease-in-out 1s;
+}
+
+.contact-info-wrap .contact-info li {
+  margin-bottom: 1rem;
+}
+
+.contact-info-wrap .contact-info i {
+  padding-right: .5rem;
+}
+
+.contact-info-wrap .social-media li {
+  margin-right: 1rem;
+}
+
+.contact-info-wrap .social-media li:last-child {
+  color: #000;
+}
+
+@media (max-width: 993px) {
+  .contact .contact-reasons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .contact .btn-outline {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact .contact-icon-lg {
+    margin-left: 0 !important;
+  }
+
+  .contact .contact-icon-lg img {
+    display: none;
+  }
+}
