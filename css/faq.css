@@ -52,6 +52,11 @@ h6 {
 .jumbotron .overlay {
   height: 420px;
   background: rgba(0, 0, 0, 0.6);
+  margin-top: -4rem;
+}
+
+#banner .overlay .container {
+  padding-top: 6rem;
 }
 
 #banner #question #mainQuest {
@@ -281,6 +286,8 @@ textarea {
 
     .jumbotron .overlay {
       height: 203px;
+      margin-top: -2rem;
+      padding: 2rem;
     }
 
     #banner #question #mainQuest {
