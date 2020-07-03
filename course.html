@@ -1,44 +1,75 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;600;700;800;900&display=swap" rel="stylesheet">
-
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/header-footer.css">
-    <link rel="stylesheet" href="css/course.css">
-
-    <title>ZuriAcademy | Home</title>
+    <link rel="stylesheet" href="/css/course.css" />
+    <title>Course Page</title>
   </head>
+
   <body>
     <!-- Header -->
-    <header class="bg-white shadow">
-      <nav class="navbar navbar-expand-xl navbar-light py-3">
+    <header class="bg-white">
+      <nav class="navbar navbar-expand-lg navbar-light py-3">
         <a class="navbar-brand" href="index.html">
-          <img src="img/zuri-logo.png" width="150" alt="ZuriAcademy" class="img-fluid"/>
+          <img
+            src="img/zuri-logo.png"
+            width="150"
+            alt="ZuriAcademy"
+            class="img-fluid"
+          />
         </a>
-
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
-
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav mr-auto w-100 justify-content-end">
             <li class="nav-item">
               <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link current" href="course.html">Courses <span class="sr-only">(current)</span></a>
+              <a class="nav-link current" href="course.html"
+                >Courses <span class="sr-only">(current)</span></a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link" href="about-us.html">About Us</a>
@@ -50,10 +81,14 @@
               <a class="nav-link" href="contact-us.html">Contact Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-btn btn btn-outline px-4" href="Signin-1.html">Sign In</a>
+              <a
+                class="nav-link shadow-sm nav-btn btn btn-outline-success px-4"
+                href="signin.html"
+                >Sign In</a
+              >
             </li>
-            <li class="nav-item">
-              <a class="nav-link sign-up nav-btn btn btn-primary" href="signup-1.html">Get Started</a>
+            <li class="nav-item shadow nav-btn btn bg-primary">
+              <a class="nav-link sign-up" href="signup.html">Get Started</a>
             </li>
           </ul>
         </div>
@@ -71,7 +106,7 @@
       <div class="hero">
         <div class="hero-heading">
           <span>
-            <h3 class="hero-h3">All Courses</h3>
+            <h3 class="hero-h3 banner-h3">All Courses</h3>
           </span>
           <br />
           <h2 class="hero-h2">Best available courses for you</h2>
@@ -114,250 +149,269 @@
           </ul>
         </nav>
     </section>
-    <hr />
-    
-    <!-- Section - Best Available Courses -->
-    <!-- Section - Top Rated -->
-    <section class="top-rated container-fluid mt-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-md">
-            <a href="#">
-              <div class="img card-1"></div>
-              <div class="details p-4">
-                <h4>Spark AR Studio for Beginners: Create Your Own Filters <span>(7 Lessons)</span></h4>
-                <h6 class="my-3">ALICIA KUNLE</h6>
-                <p>
-                  Learn how to create filters for Instagram and Facebook in Spark AR Studio.
-                </p>
-                <img src="img/rating1.png" class="img-fluid" alt="icon-star">
-              </div>
-            </a>
-          </div>
-          <div class="col-md">
-            <a href="#">
-              <div class="img card-2"></div>
-              <div class="details p-4">
-                <h4>WordPress for Beginners: Master WordPress Quickly <span>(10 Lessons)</span></h4>
-                <h6 class="my-3">AJAYI COLLINS</h6>
-                <p>
-                  Master Digital Marketing Strategy, Social Media Marketing, SEO and YouTube.
-                </p>
-                <img src="img/rating1.png" class="img-fluid" alt="icon-star">
-              </div>
-            </a>
-          </div>
-          <div class="col-md">
-            <a href="#">
-              <div class="img card-3"></div>
-              <div class="details p-4">
-                <h4>TikTok Marketing & Advertising 101, TikTok for Your... <span>(5 Lessons)</span></h4>
-                <h6 class="my-3">LAWSY ESSIEN</h6>
-                <p>
-                  An overview of how you can use TikTok to achieve your business marketing goals.
-                </p>
-                <img src="img/rating1.png" class="img-fluid" alt="icon-star">
-              </div>
-            </a>
-          </div>
-        </div> <!-- .row -->
-        <div class="row xyz">
-          <div class="col-md">
-            <a href="#">
-              <div class="img card-1"></div>
-              <div class="details p-4">
-                <h4>Spark AR Studio for Beginners: Create Your Own Filters <span>(7 Lessons)</span></h4>
-                <h6 class="my-3">ALICIA KUNLE</h6>
-                <p>
-                  Learn how to create filters for Instagram and Facebook in Spark AR Studio.
-                </p>
-                <img src="img/rating1.png" class="img-fluid" alt="icon-star">
-              </div>
-            </a>
-          </div>
-          <div class="col-md">
-            <a href="#">
-              <div class="img card-2"></div>
-              <div class="details p-4">
-                <h4>WordPress for Beginners: Master WordPress Quickly <span>(10 Lessons)</span></h4>
-                <h6 class="my-3">AJAYI COLLINS</h6>
-                <p>
-                  Master Digital Marketing Strategy, Social Media Marketing, SEO and YouTube.
-                </p>
-                <img src="img/rating1.png" class="img-fluid" alt="icon-star">
-              </div>
-            </a>
-          </div>
-          <div class="col-md">
-            <a href="#">
-              <div class="img card-3"></div>
-              <div class="details p-4">
-                <h4>TikTok Marketing & Advertising 101, TikTok for Your... <span>(5 Lessons)</span></h4>
-                <h6 class="my-3">LAWSY ESSIEN</h6>
-                <p>
-                  An overview of how you can use TikTok to achieve your business marketing goals.
-                </p>
-                <img src="img/rating1.png" class="img-fluid" alt="icon-star">
-              </div>
-            </a>
-          </div>
-        </div> <!-- .row -->
-        <div class="row xyz">
-          <div class="col-md">
-            <a href="#">
-              <div class="img card-1"></div>
-              <div class="details p-4">
-                <h4>Spark AR Studio for Beginners: Create Your Own Filters <span>(7 Lessons)</span></h4>
-                <h6 class="my-3">ALICIA KUNLE</h6>
-                <p>
-                  Learn how to create filters for Instagram and Facebook in Spark AR Studio.
-                </p>
-                <img src="img/rating1.png" class="img-fluid" alt="icon-star">
-              </div>
-            </a>
-          </div>
-          <div class="col-md">
-            <a href="#">
-              <div class="img card-2"></div>
-              <div class="details p-4">
-                <h4>WordPress for Beginners: Master WordPress Quickly <span>(10 Lessons)</span></h4>
-                <h6 class="my-3">AJAYI COLLINS</h6>
-                <p>
-                  Master Digital Marketing Strategy, Social Media Marketing, SEO and YouTube.
-                </p>
-                <img src="img/rating1.png" class="img-fluid" alt="icon-star">
-              </div>
-            </a>
-          </div>
-          <div class="col-md">
-            <a href="#">
-              <div class="img card-3"></div>
-              <div class="details p-4">
-                <h4>TikTok Marketing & Advertising 101, TikTok for Your... <span>(5 Lessons)</span></h4>
-                <h6 class="my-3">LAWSY ESSIEN</h6>
-                <p>
-                  An overview of how you can use TikTok to achieve your business marketing goals.
-                </p>
-                <img src="img/rating1.png" class="img-fluid" alt="icon-star">
-              </div>
-            </a>
-          </div>
-        </div> <!-- .row -->
-      </div> <!-- .container -->
-    </section> <!-- .top-rated -->
+      <hr />
+      <!-- Header -->
+        
 
-    <!-- Next/Previous button -->
-    <div class="next-prev container my-5 d-flex align-items-center justify-content-center">
-      <a href="#"><i class="fas fa-chevron-left mr-4"></i></a>
-      &nbsp;&nbsp;
-      <span>PAGE 1</span>
-      &nbsp;&nbsp;
-      <a href="#"><i class="fas fa-chevron-right ml-4"></i></a>
+    <!-- Section - Best Available Courses -->
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-md">
+        <a href="#">
+          <img src="/img/card1.png " alt="img">
+          <div class="details p-4">
+            <h4>Spark AR Studio for Beginners: Create Your Own Filters <span>(7 Lessons)</span></h4>
+            <h6 class="my-3">ALICIA KUNLE</h6>
+            <p>
+              Learn how to create filters for Instagram and Facebook in Spark AR Studio.
+            </p>
+            <img src="img/rating1.png" class="img-fluid" alt="icon-star">
+          </div>
+        </a>
+      </div>
+      <div class="col-md">
+        <a href="#">
+          <img src="/img/card2.png" alt="img2">
+          <div class="details p-4">
+            <h4>WordPress for Beginners: Master WordPress Quickly <span>(10 Lessons)</span></h4>
+            <h6 class="my-3">AJAYI COLLINS</h6>
+            <p>
+              Master Digital Marketing Strategy, Social Media Marketing, SEO and YouTube.
+            </p>
+            <img src="img/rating1.png" class="img-fluid" alt="icon-star">
+          </div>
+        </a>
+      </div>
+      <div class="col-md">
+        <a href="#">
+          <img src="/img/card3.png" alt="img3">
+          <div class="details p-4">
+            <h4>TikTok Marketing & Advertising 101, TikTok for Your... <span>(5 Lessons)</span></h4>
+            <h6 class="my-3">LAWSY ESSIEN</h6>
+            <p>
+              An overview of how you can use TikTok to achieve your business marketing goals.
+            </p>
+            <img src="img/rating1.png" class="img-fluid" alt="icon-star">
+          </div>
+        </a>
+      </div>
     </div>
-    
-    <!-- Section About our ccompany -->
-    <!-- Section - Why -->
-    <section class="why container-fluid mb-5">
-      <div class="container">
-        <div class="row d-flex align-items-center">
-          <div class="col-md">
-            <div>
-              <h4 class="section-title">More About Our Company</h4>
-              <h3 class="mb-4">Why Choose To Learn On Zuri Academy?</h3>
+    <div class="row">
+      <div class="col-md">
+        <a href="#">
+          <img src="/img/card1.png " alt="img">
+          <div class="details p-4">
+            <h4>Spark AR Studio for Beginners: Create Your Own Filters <span>(7 Lessons)</span></h4>
+            <h6 class="my-3">ALICIA KUNLE</h6>
+            <p>
+              Learn how to create filters for Instagram and Facebook in Spark AR Studio.
+            </p>
+            <img src="img/rating1.png" class="img-fluid" alt="icon-star">
+          </div>
+        </a>
+      </div>
+      <div class="col-md">
+        <a href="#">
+          <img src="/img/card2.png" alt="img2">
+          <div class="details p-4">
+            <h4>WordPress for Beginners: Master WordPress Quickly <span>(10 Lessons)</span></h4>
+            <h6 class="my-3">AJAYI COLLINS</h6>
+            <p>
+              Master Digital Marketing Strategy, Social Media Marketing, SEO and YouTube.
+            </p>
+            <img src="img/rating1.png" class="img-fluid" alt="icon-star">
+          </div>
+        </a>
+      </div>
+      <div class="col-md">
+        <a href="#">
+          <img src="/img/card3.png" alt="img3">
+          <div class="details p-4">
+            <h4>TikTok Marketing & Advertising 101, TikTok for Your... <span>(5 Lessons)</span></h4>
+            <h6 class="my-3">LAWSY ESSIEN</h6>
+            <p>
+              An overview of how you can use TikTok to achieve your business marketing goals.
+            </p>
+            <img src="img/rating1.png" class="img-fluid" alt="icon-star">
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md">
+        <a href="#">
+          <img src="/img/card1.png " alt="img">
+          <div class="details p-4">
+            <h4>Spark AR Studio for Beginners: Create Your Own Filters <span>(7 Lessons)</span></h4>
+            <h6 class="my-3">ALICIA KUNLE</h6>
+            <p>
+              Learn how to create filters for Instagram and Facebook in Spark AR Studio.
+            </p>
+            <img src="img/rating1.png" class="img-fluid" alt="icon-star">
+          </div>
+        </a>
+      </div>
+      <div class="col-md">
+        <a href="#">
+          <img src="/img/card2.png" alt="img2">
+
+          <div class="details p-4">
+            <h4>WordPress for Beginners: Master WordPress Quickly <span>(10 Lessons)</span></h4>
+            <h6 class="my-3">AJAYI COLLINS</h6>
+            <p>
+              Master Digital Marketing Strategy, Social Media Marketing, SEO and YouTube.
+            </p>
+            <img src="img/rating1.png" class="img-fluid" alt="icon-star">
+          </div>
+        </a>
+      </div>
+      <div class="col-md">
+        <a href="#">
+          <img src="/img/card3.png" alt="img3">
+          <div class="details p-4">
+            <h4>TikTok Marketing & Advertising 101, TikTok for Your... <span>(5 Lessons)</span></h4>
+            <h6 class="my-3">LAWSY ESSIEN</h6>
+            <p>
+              An overview of how you can use TikTok to achieve your business marketing goals.
+            </p>
+            <img src="img/rating1.png" class="img-fluid" alt="icon-star">
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Next/Previous button -->
+<div class="col-md-12 chevron">
+  <i class="fas fa-chevron-left"></i>&nbsp;&nbsp;
+  <span>PAGE 1</span>
+  &nbsp;&nbsp;<i class="fas fa-chevron-right"></i>
+</div>
+<
+<!-- Section About our ccompany -->
+<section class="about-us container-fluid">
+  <div class="container">
+    <div class="row d-flex align-items-center">
+      <div class="col-lg-4 col-md">
+        <div>
+          <h4 class="section-title">More About Our Company</h4>
+          <h3 class="mb-4">Why Choose To Learn On Zuri Academy?</h3>
+        </div>
+        <p>Explore Your Full Potential and Get Certificates Verified By Silicon Valley Brands on Zuri Academy.</p>
+        <ul>
+          <li><i class="fas fa-circle"></i> Advance Your Skillset</li>
+          <li><i class="fas fa-circle"></i> Start A Career In Any Field</li>
+          <li><i class="fas fa-circle"></i> Get Valid Certification</li>
+        </ul>
+        <a href="#"class="btn btn-lg btn-primary mt-3">More About Us</a>
+      </div>
+      <!-- <div class="col-md card-1"> -->
+      <div class="col-lg-4 about-us">
+        <img src="./img/about-img1.png" alt="about image">
+        <div></div>
+      </div>
+      <!-- <div class="col-md card-2"> -->
+      <div class="col-lg-4 about-us">
+        <img src="./img/about-img2.png" alt="about-image2">
+        <div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="row d-flex flex-column flex-lg-row">
+        <div class="col-12 col-lg-3 mb-5 mb-lg-0">
+          <img src="img/zuri-logo2.png" alt="logo" />
+          <p class="intro">
+            Suri academy is the best way to start New Tech Career Path With The
+            Best Set Of Instructors and Experts
+          </p>
+          <div class="d-flex logo">
+            <img src="img/Facebook.png" alt="fb" />
+            <img src="img/Youtube.png" alt="yt" class="mx-3" />
+            <img src="img/Twitter.png" alt="twt" />
+          </div>
+        </div>
+        <div class="col-12 col-lg-6 mb-5 mb-lg-0">
+          <div class="row">
+            <div class="col-6 col-sm-6 col-md-6 col-lg-3">
+              <p class="head">Collaborate</p>
+              <a href="#">Our Partner</a>
+              <a href="#">Donate Now</a>
+              <a href="#">Become a partner</a>
+              <a href="#">Our Goals</a>
             </div>
-            <p>Explore Your Full Potential and Get Certificates Verified By Silicon Valley Brands on Zuri Academy.</p>
-            <ul>
-              <li><i class="fas fa-circle"></i> Advance Your Skillset</li>
-              <li><i class="fas fa-circle"></i> Start A Career In Any Field</li>
-              <li><i class="fas fa-circle"></i> Get Valid Certification</li>
-            </ul>
-            <a href="#"class="btn btn-lg btn-primary mt-3">More About Us</a>
+            <div class="col-6 col-sm-6 col-md-6 col-lg-3">
+              <p class="head">Navigation</p>
+              <a href="#">About us</a>
+              <a href="#">Courses</a>
+              <a href="#">Blog</a>
+              <a href="#">FAQ</a>
+            </div>
+            <div class="col-sm-12 col-lg-3 top-buffer">
+              <p class="head">Contact Us</p>
+              <div class="row">
+                <p class="col-6 col-md-6 col-lg-12 contact">
+                  No 10, Lekki Phase 1 Lagos State, Nigeria.
+                </p>
+                <p class="col-6 col-md-6 col-lg-12 contact">
+                  +234 816 0877 462 info@suriacademy
+                </p>
+              </div>
+            </div>
           </div>
-          <div class="col-md card-1">
-            <div></div>
-          </div>
-          <div class="col-md card-2">
-            <div></div>
+        </div>
+        <div class="col-12 col-lg-3">
+          <p class="head">Newsletter</p>
+          <p class="intro">
+            Subscribe to our E-Newsletter to get latest deals on our courses.
+          </p>
+          <div class="d-flex align-items-center" id="feedback">
+            <input
+              type="text"
+              class="px-3 py-1 w-100 rounded-left"
+              placeholder="your email address"
+            />
+            <div class="bg-primary px-2 py-1 rounded-right">
+              <img src="img/Vector1.png" alt="mail" />
+            </div>
           </div>
         </div>
       </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="container-fluid bg-base">
-      <div class="underline">
-        <div class="row">
-          <div class="col-md-5 mb-4">
-            <div class="row">
-              <div class="col">
-                <h5>Collaborate</h5>
-                <ul>
-                  <li><a href="#">Our Partners</a></li>
-                  <li><a href="#">Donate Now</a></li>
-                  <li><a href="#">Become an Instructor</a></li>
-                  <li><a href="#">Our Goals</a></li>
-                </ul>
-              </div>
-              <div class="col">
-                <h5>Navigation</h5>
-                <ul>
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="#">Courses</a></li>
-                  <li><a href="#">Blog</a></li>
-                  <li><a href="#">FAQ</a></li>
-                  <li><a href="#">Testimonials</a></li>
-                </ul>
-              </div>
-            </div>
+      <hr />
+      <div class="container floor">
+        <div class="row justify-content-center">
+          <div class="col-md-6 col-sm-6 col-xs-6">
+            <p class="footer-copyright text-center py-3 floor">
+              <a href="#"> &copy; Suri A, Inc. 2020. All rights reserved.</a>
+            </p>
           </div>
-          <div class="col-md-7">
-            <div class="row">
-              <div class="col">
-                <h5>Contact Us</h5>
-                <ul>
-                  <li><p>No 10, Lekki Phase 1, Lagos State, Nigeria</p></li>
-                  <li><a href="#">+1 234 567 891</a></li>
-                  <li><a href="#">info@zuriacademy</a></li>
-                </ul>
-                <div class="social-icons d-flex mt-4 mb-4">
-                  <a href="#">
-                    <img src="img/facebook.png" width="35" alt="facebook">
-                  </a>
-                  <a href="#">
-                    <img src="img/youtube.png" width="35" alt="YouTube">
-                  </a>
-                  <a href="#">
-                    <img src="img/twitter.png" width="35" alt="twitter">
-                  </a>
-                </div>
-              </div>
-              <div class="col">
-                <h5>Newsletter</h5>
-                <p>Subscribe to our e-newsletter to get latest deals on our courses.</p>
-                <form action="">
-                  <div class="form-group">
-                    <div class="input-group">
-                      <input type="email" class="form-control" name="newsletter" id="newsletter" placeholder="Email">
-                      <div class="input-group-append">
-                        <button class="btn btn-primary px-3" type="button"><i class="fas fa-paper-plane"></i></button>
-                    </div>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div> <!-- .row -->
-          </div> <!-- .col-md -->
-        </div> <!-- .row -->
-      </div> <!-- .underline -->
-      <div class="text-center mt-4">
-        <p>&copy; Zuri A, Inc. 2020. All right reserved.</p>
+        </div>
       </div>
     </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

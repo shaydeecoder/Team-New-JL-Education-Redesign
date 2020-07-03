@@ -1,0 +1,494 @@
+:root {
+    --base-color: #1652f0;
+    --primary-color: #05b169;
+    --secondary-color: #ffcf40;
+    --font-stack: "Poppins", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-stack);
+    color: #000;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-stack);
+    font-weight: bold;
+    color: var(--base-color);
+}
+
+/* Utility */
+.bg-base {
+    background-color: var(--base-color) !important;
+}
+
+.bg-primary {
+    background-color: var(--primary-color) !important;
+}
+
+.bg-secondary {
+    background-color: var(--secondary-color) !important;
+}
+
+/* add jumbotron image here */
+
+.jumbotron {
+    height: 420px;
+    background-color: #e5e5e5;
+    background: url("https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80") no-repeat center center/cover;
+}
+
+.jumbotron .overlay {
+    height: 420px;
+    background: rgba(0, 0, 0, 0.6);
+    margin-top: -4rem;
+}
+
+#banner .overlay .container {
+    padding-top: 6rem;
+}
+
+#banner #question #mainQuest h3 {
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 56px;
+}
+
+#banner #question #mainQuest button#getStarted {
+    padding: 12px 36px;
+    border: none;
+    background-color: #05B169;
+    border-radius: 8px;
+    color: #fff;
+    display: inline-block;
+}
+
+#banner #question #mainQuest button#enroll {
+    display: none;
+}
+
+section#about {
+    padding: 3%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    color: #333333;
+}
+
+section #right {
+    grid-row: 1/2;
+    grid-column: 9/13;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+section #right #image img {
+    border-radius: 70%;
+    width: 110px;
+    height: 120px;
+}
+
+section #left {
+    grid-row: 1/2;
+    grid-column: 1/8;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+section #right small#jobType {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 5px;
+}
+
+section #right p#name {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 48px;
+    color: #050F19;
+    margin-bottom: 5px;
+}
+
+section #right p#job {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: #050F19;
+}
+
+section #right #bio {
+    display: flex;
+}
+
+.firstDivision {
+    grid-column: 1/13;
+    grid-row: 1/2;
+}
+
+.secondDivision {
+    grid-column: 1/13;
+    grid-row: 2/3;
+}
+
+section #left h3 {
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 72px;
+    color: #333333;
+}
+
+section #left p {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 0;
+}
+
+section #left small {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #4070FF;
+}
+
+section #left aside h4 {
+    color: #333333;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 48px;
+}
+
+section #left aside #learn {
+    display: flex;
+    justify-content: space-between;
+}
+
+section #left aside ul {
+    padding: 0;
+    margin: 0;
+}
+
+section #left aside li {
+    list-style-type: none;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    margin-top: 20px;
+}
+
+#learnMore {
+    margin-top: 5%;
+}
+
+section #right aside ul {
+    padding: 0;
+    margin: 0;
+    margin-top: 15%;
+}
+
+section #right aside li {
+    list-style-type: none;
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+section#photoshop {
+    padding: 3%;
+    color: #333333;
+}
+
+section#photoshop .rowBorder {
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: 8px;
+    height: 390px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+section#photoshop .rowBorder .aboutFirst {
+    grid-column: 1/6;
+}
+
+section#photoshop .rowBorder .aboutSecond {
+    grid-column: 6/13;
+}
+
+section#photoshop .rowBorder h5 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 48px;
+    color: #333333;
+}
+
+section#photoshop .rowBorder h3 {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 54px;
+    color: #333333;
+
+}
+
+section#photoshop .rowBorder .aboutFirst img {
+    margin-top: 1%;
+}
+
+section#photoshop .rowBorder p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: #333333;
+    margin-bottom: 5px;
+}
+
+section#photoshop .rowBorder small {
+    font-size: 24px;
+    line-height: 36px;
+    color: #4070FF;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 1218px) {
+
+    section#photoshop .rowBorder {
+        border: 1px solid rgba(0, 0, 0, .125);
+        border-radius: 8px;
+        height: auto;
+        /* display: block; */
+    }
+
+}
+
+@media screen and (max-width:1098px) {
+    section#photoshop {
+        display: none;
+    }
+}
+
+@media screen and (max-width:1120px) {
+
+    section #right {
+        grid-row: 2/3;
+        grid-column: 1/13;
+        display: block;
+        grid-template-columns: repeat(12, 1fr);
+    }
+
+    section #left {
+        grid-row: 1/2;
+        grid-column: 1/13;
+        text-align: left;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+
+
+    }
+
+    section #right aside ul {
+        padding: 0;
+        margin: 0;
+        margin-top: 1%;
+    }
+
+    section #right #bio {
+        margin-top: 5%;
+    }
+
+    section #left aside #learn {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+    }
+
+    section #left aside #learn #one {
+        grid-column: 1/7;
+    }
+
+    section #left aside #learn #two {
+        grid-column: 7/13;
+    }
+}
+
+
+@media screen and (max-width:600px) {
+
+
+    .jumbotron {
+        height: 203px;
+        background-color: #e5e5e5;
+    }
+
+    #banner #question #mainQuest {
+        margin-top: -20% !important;
+    }
+
+    #banner #question #mainQuest h3 {
+        font-size: 24px;
+    }
+
+    #banner #question #mainQuest p {
+        margin-bottom: 5px;
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+    .jumbotron .overlay {
+        height: 203px;
+        margin-top: -11%;
+        padding: 2rem;
+    }
+
+    #banner #question #mainQuest h3 {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 21px;
+    }
+
+    #banner #question #mainQuest button#getStarted {
+        display: none;
+    }
+
+    #banner #question #mainQuest button#enroll {
+        display: inline-block;
+        padding: 4.3376px 13.0128px;
+        border-radius: 5px;
+    }
+
+    #banner #question #mainQuest {
+        margin-top: -20% !important;
+    }
+
+    section #left h3 {
+        font-size: 18px;
+        line-height: 27px;
+
+    }
+
+    section #left p {
+        font-size: 8.4232px;
+        line-height: 13px;
+    }
+
+    section #left small {
+        font-size: 7.01933px;
+        line-height: 11px;
+        display: block;
+    }
+
+    section #left aside h4 {
+        font-size: 11.2309px;
+        line-height: 17px;
+    }
+
+    section #left aside li {
+        font-size: 8.4232px;
+        line-height: 13px;
+    }
+
+    section #right small#jobType {
+        font-size: 7.46412px;
+        line-height: 11px;
+    }
+
+    section #right p#name {
+        font-size: 11.9426px;
+        line-height: 18px;
+    }
+
+    section #right p#job {
+        font-size: 8.95694px;
+        line-height: 13px;
+    }
+
+    section #right aside li {
+        font-size: 8.82581px;
+        line-height: 13px;
+
+
+    }
+
+    section #right #image img {
+        width: 37.32px;
+        height: 37.32px;
+        margin-top: 40%;
+    }
+
+    section #right #profile {
+        margin-left: -5%;
+    }
+
+    section #right #moreDet {
+        margin-top: 5px !important;
+    }
+
+    section#photoshop .rowBorder .aboutFirst img {
+        margin-top: 1%;
+        width: 300px;
+        height: 300px;
+    }
+
+    section#photoshop .rowBorder h5 {
+        font-size: 11.299px;
+        line-height: 17px;
+    }
+
+    section#photoshop .rowBorder h3 {
+        font-size: 12.7113px;
+        line-height: 19px;
+    }
+
+
+
+    section#photoshop .rowBorder p {
+        font-weight: 500;
+        font-size: 8.47423px;
+        line-height: 13px;
+    }
+}
+
+
+@media screen and (max-width: 574px) {
+    .jumbotron .overlay {
+        height: 203px;
+        margin-top: -6%;
+        padding: 2rem;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .jumbotron .overlay {
+        height: 203px;
+        margin-top: -7%;
+        padding: 2rem;
+    }
+
+    #banner #question #mainQuest {
+        margin-top: -30% !important;
+    }
+
+}
+
+@media screen and (max-width: 446px) {
+    .jumbotron .overlay {
+        height: 203px;
+        margin-top: -7%;
+        padding: 2rem;
+    }
+
+    #banner #question #mainQuest {
+        margin-top: -25% !important;
+    }
+}

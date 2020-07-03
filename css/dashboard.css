@@ -75,7 +75,12 @@ body {
     grid-row: 1/4;
     grid-column: 1/3;
     background-color: #1652F0;
-    padding-left: 20%;
+    padding-left: 15%;
+}
+
+#wrapper main aside a {
+    text-decoration: none;
+    color: #fff;
 }
 
 #wrapper main aside ul {
@@ -128,6 +133,7 @@ header .btn:hover {
 #wrapper main #right #overview .topProgress {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    grid-gap: 3%;
 }
 
 #wrapper main #right #overview .topProgress #first {
@@ -137,13 +143,13 @@ header .btn:hover {
 }
 
 #wrapper main #right #overview .topProgress #second {
-    grid-column: 6/9;
+    grid-column: 5/9;
     border: 1px solid rgba(128, 128, 128, 0.26);
     border-radius: 8px;
 }
 
 #wrapper main #right #overview .topProgress #third {
-    grid-column: 10/13;
+    grid-column: 9/13;
     border: 1px solid rgba(128, 128, 128, 0.26);
     border-radius: 8px;
 }

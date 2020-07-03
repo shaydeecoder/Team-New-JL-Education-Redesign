@@ -307,10 +307,6 @@ h2.about-text {
 
 /* Footer 
    ============================= */
-footer {
-  background-color: var(--base-color) !important;
-  padding: 4rem;
-}
 footer p {
   color: white !important;
   display: block;
@@ -326,14 +322,19 @@ footer a {
   opacity: 0.7;
 }
 footer a:hover {
-  opacity: 0.8 !important;
+  opacity: 0.9 !important;
   color: white !important;
   text-decoration: none;
 }
 footer p.head {
   opacity: 0.9;
-  font-weight: bold;
-  font-size: 1rem;
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+
+footer {
+  background-color: var(--base-color) !important;
+  padding: 4rem;
 }
 
 footer hr {
@@ -344,17 +345,17 @@ footer a {
   font-size: 1em;
 }
 footer p {
-  font-size: 0.8em;
+  font-size: 1.2em;
   font-weight: bold;
 }
 footer p.intro {
   font-size: 1em;
 }
 footer p.head {
-  font-size: 1em;
+  font-size: 1.1em;
   font-weight: bold;
+  margin-bottom: 5px;
 }
-
 footer p.contact {
   font-size: 1em;
   font-weight: normal;
@@ -363,14 +364,10 @@ footer input {
   border: 0;
   padding: 30px;
 }
-div p.newsletter {
-  font-size: 0.5em;
-  font-weight: normal;
-}
 
 footer .floor {
   margin-top: 20px;
-  font-size: 0.6em;
+  font-size: 1em;
 }
 
 footer .logo img {

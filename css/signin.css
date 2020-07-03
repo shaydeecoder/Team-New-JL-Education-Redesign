@@ -15,6 +15,13 @@ body {
   font-family: var(--font-stack);
   color: #000;
   overflow-x: hidden;
+  background-image: url(../img/signin.jpeg);
+  background-repeat: no-repeat;
+  max-width: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  /* background-color: white; */
 }
 
 h1,
@@ -45,7 +52,7 @@ header {
   padding-left: 2rem;
   padding-right: 2rem;
   background: var(--secondary-color);
-  /* border-bottom: 1px solid #333; */
+  border-bottom: 1px solid #333;
 }
 
 header nav .current {
@@ -70,153 +77,57 @@ header div .btn:hover {
   opacity: 0.8 !important;
 }
 
-/* Hero 
+/* Form - Sign-Up
    ============================= */
-.banner-h2 {
-  margin: auto;
-  color: #fff;
-}
-span h3.banner-h3 {
-  font-size: 1.5em;
-  font-weight: bold;
-}
-.pageHeader.banner {
-  background-image: url("../img/banner.jpg");
-  height: 250px;
-  background-size: cover;
-}
-.banner-overlay {
-  background: #1652f0;
-  opacity: 0.5 !important;
-  color: white;
-  height: 100%;
-  width: 100%;
-  display: flex;
+form#form {
+  background-color: white;
+  width: 40%;
+  margin-top: 50px;
+  padding: 20px 0;
+  border-radius: 5px;
+  margin-bottom: 99px;
 }
 
-.hero {
-  display: flex;
-  width: 100%;
+label {
+  color: #818181;
 }
-.hero-heading {
-  margin: auto;
-  width: 100%;
-  text-align: center;
+p {
+  color: #818181;
+  margin-bottom: 20px;
 }
-.hero-h2 {
-  color: #1652f0;
-  font-size: 1.8em;
-}
-.hero-h3 {
-  color: #000;
-  font-size: 90%;
-}
-span {
-  font-size: 12px;
-  color: #1652f0;
-}
-header div .pageHeader {
-  background-image: url("img/banner.jpg");
-  height: 250px;
-  background-size: cover;
-}
-header div .overlay {
-  background: #1652f0;
-  opacity: 0.5 !important;
-  color: white;
-  height: 100%;
-  width: 100%;
-  display: flex;
-}
-/* Navigation 
-   ============================= */
-.nav-link {
-  color: rgb(138, 133, 133);
-}
-.nav-item a.active {
-  color: #1652f0 !important;
-  background-color: white !important;
-}
-
-/* Section - Best Available Courses
-   ============================= */
-img {
-  max-width: 100%;
-}
-h3 {
-  color: #000;
-  font-size: 1.4em;
-}
-h4 {
-  font-size: 1.1em;
-  color: black;
-}
-h4 span {
-  font-size: 0.5em;
-  color: #1652f0;
-}
-h6 {
-  font-size: 0.8em;
-}
-.details p {
-  color: black;
-  font-size: 0.8em;
-}
-
-/* Section - About our company
-   ============================= */
-.chevron {
-  height: 50px;
-  font-size: 40px;
-  width: 100%;
-  text-align: center;
-  margin-bottom: 50px;
-}
-.chevron span {
-  color: black;
-  font-size: 0.6em;
-}
-.fa-chevron-left,
-.fa-chevron-right {
-  color: #1652f0;
-  font-size: 0.8em;
-}
-.fa-chevron-left:hover,
-.fa-chevron-right:hover {
-  opacity: 0.7;
-}
-/* Section - About our company
-   ============================= */
-.about-us ul {
-  list-style: none;
-}
-
-.about-us ul li {
-  display: flex;
-  align-items: center;
-}
-
-.about-us ul li i {
-  font-size: 8px;
-  color: var(--primary-color);
-  margin-right: 0.5rem;
-}
-
-.about-us .card-1 {
-  padding-top: 4rem;
-}
-.about-us .card-2 {
-  padding-bottom: 1rem;
-}
-
-.about-us .card-1 div,
-.why .card-2 div {
-  height: 500px;
-}
-.about-us img {
-  max-width: 100%;
+button {
   margin: 20px 0;
 }
+button.normal-signin {
+  background: #05b169;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+}
+button.google-signin {
+  background: #1652f0;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+}
+
+/* Form - Sign-in
+   ============================= */
+form#form {
+  background-color: white;
+  width: 40%;
+  margin-top: 50px;
+  padding: 20px 0;
+  border-radius: 5px;
+  margin-bottom: 99px;
+}
+
+p.signin {
+  font-size: 1.1em;
+}
+
+/* .password {
+  visibility: visible;
+} */
+
 /* Footer 
    ============================= */
 footer {
@@ -296,28 +207,60 @@ footer .logo img:hover {
   height: 35px;
 }
 
-/* Responsiveness 
-   ============================= */
 @media (max-width: 768px) {
   /* Header */
+  body {
+    background: none;
+  }
   header nav .btn {
     margin-top: 1rem;
   }
 
-  /* Navigation
+  /* Responsiveness
    ============================= */
-  .navbar .navbar-brand {
-    font-size: 30px;
+
+  form#form {
+    background-color: white;
+    width: 80%;
+    margin-top: 0px;
+    padding-top: 20px;
   }
-  .second-nav {
-    font-size: 0.8em;
-  }
-  img.img-fluid {
-    max-width: 70%;
+  /* Footer
+   ============================= */
+  footer p {
+    font-size: 0.7rem;
   }
 
-  div.hide img {
-    display: none;
+  footer a {
+    font-size: 0.7rem;
+  }
+  footer .top-buffer {
+    margin-top: 40px;
+  }
+  .password {
+    visibility: visible;
+  }
+}
+
+/* Responsiveness 
+   ============================= */
+@media screen and (max-width: 1024px) {
+  /* Header */
+
+  header nav .btn {
+    margin-top: 1rem;
+  }
+  h2.signin {
+    font-size: 1.6em;
+  }
+  /* p.signin {
+    font-size: 0.9em;
+  } */
+  form#form {
+    background-color: white;
+    width: 100%;
+    margin-top: 0px;
+    padding-top: 20px;
   }
   /* Footer
    ============================= */
@@ -342,5 +285,8 @@ footer .logo img:hover {
   footer p.contact {
     font-size: 1em;
     font-weight: normal;
+  }
+  .password {
+    visibility: visible;
   }
 }
